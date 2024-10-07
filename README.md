@@ -34,29 +34,28 @@
     end;
     i++;
 # end;
- sum*=((3*delX)/8);
- printf("%f",sum);
+# sum*=((3*delX)/8);
+# printf("%f",sum);
 
  # simpson 1/3
 
-clc;
-clear all;
-a=0;
-b=1;
-n=6; %must be an even
-delX=(b-a)/n;
-f=@(x) 1/(1+x^2);
-xi=@(i) a+i*delX;
-sum = f(xi(0))+f(xi(n));
-i=1;
-while i<n
+# clc;
+# clear all;
+# a=0;
+# b=1;
+# n=6; %must be an even
+# delX=(b-a)/n;
+# f=@(x) 1/(1+x^2);
+# xi=@(i) a+i*delX;
+# sum = f(xi(0))+f(xi(n));
+# i=1;
+# while i<n
     if rem(i,2)==0
         sum += 2*f(xi(i));
     else sum+=4*f(xi(i));
     end;
     i++;
 end;
- sum*=(delX/3);
- printf("%f",sum);
+# sum*=(delX/3);
+# printf("%f",sum);
 
-# 
