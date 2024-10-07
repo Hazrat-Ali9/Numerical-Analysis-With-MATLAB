@@ -14,3 +14,6 @@ while xi(x_not) <=b
     x_not++;
 end;
 printf("%f", y_not);
+
+# Simpson 3/8 : 
+
