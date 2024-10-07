@@ -76,3 +76,23 @@ end;
 # end;
 # sum*=(h/2);
 # printf("%f",sum);
+
+# Runge Kutta : 5
+
+# clc;
+# clear all;
+# f=@(x,y)x+y^2;
+# h=0.1;
+# for_x=0.2;
+# init_x=0;
+# init_y=1;
+
+# while init_x<for_x
+   # k1 = h*f(init_x,init_y);
+   # k2= h* f((init_x)+h/2,(init_y)+k1/2);
+   # k3 = h* f((init_x)+h/2,(init_y)+k2/2);
+   # k4 = h*f(init_x+h,init_y+k3);
+   # init_y+=(1/6*(k1+2*k2+2*k3+k4));
+   # init_x+=h;
+# end;
+# printf("%f",init_y);
