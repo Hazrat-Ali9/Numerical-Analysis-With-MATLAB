@@ -1,4 +1,4 @@
-# Eular Method 
+# Eular Method : Number 1
 
 # a=0;
 # b=0.1;
@@ -15,7 +15,7 @@
 # end;
 # printf("%f", y_not);
 
-# Simpson 3/8 : 
+# Simpson 3/8 : Number 2
 
 # clc;
 # clear all;
@@ -37,7 +37,7 @@
 # sum*=((3*delX)/8);
 # printf("%f",sum);
 
- # simpson 1/3
+ # simpson 1/3 : Number 3
 
 # clc;
 # clear all;
@@ -59,3 +59,20 @@ end;
 # sum*=(delX/3);
 # printf("%f",sum);
 
+# Trapezoidal : 4
+
+# clc;
+# clear all;
+# f=@(x) 1/(1+x^2);
+# a=0;
+# b=6;
+# h=(b-a)/6;
+# xi=@(i) a+i*h;
+# sum=f(xi(0))+f(xi(6));
+# i=1;
+# while i<6
+    sum+=(2*f(xi(i)));
+    i++;
+# end;
+# sum*=(h/2);
+# printf("%f",sum);
