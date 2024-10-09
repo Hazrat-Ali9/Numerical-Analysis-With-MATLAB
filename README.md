@@ -96,3 +96,5 @@ end;
    # init_x+=h;
 # end;
 # printf("%f",init_y);
+
+# Hazrat Ali
