@@ -1,3 +1,5 @@
+# Hazrat Ali
+
 # Eular Method : Number 1
 
 # a=0;
@@ -37,7 +39,7 @@
 # sum*=((3*delX)/8);
 # printf("%f",sum);
 
- # simpson 1/3 : Number 3
+ # Simpson 1/3 : Number 3
 
 # clc;
 # clear all;
@@ -101,3 +103,6 @@ end;
 # Software Engineer
 # CSE 
 # ID : 221010050
+# 
+
+
