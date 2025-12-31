@@ -2,7 +2,7 @@
 
 # 🚢 Programmer || Software Engineering 
 
-# Matlab
+# Matla
 
 # Eular Method : Number 1
 
